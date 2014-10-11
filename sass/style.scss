@@ -30,18 +30,24 @@ $browser-minimum-versions: (
 
 //////////////////////////////
 // GLOBALS
-@import "partials/global/variables";
 @import "partials/global/functions";
+@import "partials/global/variables";
 @import "partials/global/mixins";
 @import "partials/global/extends";
-//////////////////////////////
-
-//////////////////////////////
-// COMPONENTS
-
+@import "partials/global/fonts";
 //////////////////////////////
 
 //////////////////////////////
 // LAYOUTS
+@import "partials/layouts/layouts";
+//////////////////////////////
 
 //////////////////////////////
+// COMPONENTS
+@import "partials/components/base";
+@import "partials/components/images";
+@import "partials/components/bio";
+@import "partials/components/video";
+//////////////////////////////
+
+

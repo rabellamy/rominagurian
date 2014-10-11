@@ -1,0 +1,28 @@
+
+$breakpoint-to-ems: true;
+
+@include add-grid(12);
+@include add-gutter(1/3);
+
+%twelve-one {
+  @include grid-span(12, 1);
+  clear: both;
+}
+
+header,
+main,
+footer {
+  @extend %twelve-one;
+}
+
+%left-column {
+  @include breakpoint(800px) {
+    @include grid-span(4, 2);
+  }
+}
+
+%right-column {
+  @include breakpoint(800px) {
+    @include grid-span(5, 6);
+  }
+}
